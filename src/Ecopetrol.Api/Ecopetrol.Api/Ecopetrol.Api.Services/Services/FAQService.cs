@@ -16,8 +16,11 @@ namespace Ecopetrol.Api.Services
 
         public FAQService(IOptions<AppSettings> settings, IMapper mapper)
         {
+            if (settings == null)
+                throw new ArgumentNullException(nameof(settings));
+
             _settings = settings?.Value;
-            _mapper = mapper;
+            _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
         }
 
         public async Task<FAQ> CreateAsync(FAQ faq)

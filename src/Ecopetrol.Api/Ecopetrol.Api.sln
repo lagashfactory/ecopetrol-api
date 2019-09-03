@@ -7,27 +7,29 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.API", "1.API", "{67B44A01
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecopetrol.Api.API", "Ecopetrol.Api\Ecopetrol.Api.API\Ecopetrol.Api.API.csproj", "{5BF15EA6-D30B-4322-AF06-39FB2FEE054E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecopetrol.Api.API.Common", "Ecopetrol.Api\Ecopetrol.Api.API.Common\Ecopetrol.Api.API.Common.csproj", "{27C36892-9DCF-4001-9299-DAF1033F252B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecopetrol.Api.API.Common", "Ecopetrol.Api\Ecopetrol.Api.API.Common\Ecopetrol.Api.API.Common.csproj", "{27C36892-9DCF-4001-9299-DAF1033F252B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecopetrol.Api.API.DataContracts", "Ecopetrol.Api\Ecopetrol.Api.API.DataContracts\Ecopetrol.Api.API.DataContracts.csproj", "{94F3821E-8A03-42D6-8DEA-CAFF6929C696}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecopetrol.Api.API.DataContracts", "Ecopetrol.Api\Ecopetrol.Api.API.DataContracts\Ecopetrol.Api.API.DataContracts.csproj", "{94F3821E-8A03-42D6-8DEA-CAFF6929C696}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00.Tests", "00.Tests", "{1D22228A-03D8-4400-8296-DC405D725FBA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecopetrol.Api.API.Tests.Controllers", "Ecopetrol.Api\Ecopetrol.Api.API.Tests.Controllers\Ecopetrol.Api.API.Tests.Controllers.csproj", "{9820370D-0297-46DD-99E4-300FF9D12120}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecopetrol.Api.API.Tests.Controllers", "Ecopetrol.Api\Ecopetrol.Api.API.Tests.Controllers\Ecopetrol.Api.API.Tests.Controllers.csproj", "{9820370D-0297-46DD-99E4-300FF9D12120}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecopetrol.Api.API.Tests.REST", "Ecopetrol.Api\Ecopetrol.Api.API.Tests.REST\Ecopetrol.Api.API.Tests.REST.csproj", "{302BCCBC-E7D7-4309-9436-76EE4AF54474}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecopetrol.Api.API.Tests.REST", "Ecopetrol.Api\Ecopetrol.Api.API.Tests.REST\Ecopetrol.Api.API.Tests.REST.csproj", "{302BCCBC-E7D7-4309-9436-76EE4AF54474}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.Common", "01.Common", "{F3E7C783-E494-4806-8071-2AF532AE45D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecopetrol.Api.IoC.Configuration", "Ecopetrol.Api\Ecopetrol.Api.IoC.Configuration\Ecopetrol.Api.IoC.Configuration.csproj", "{82DDFB82-2AC5-48CD-BDE0-48281140ADCC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecopetrol.Api.IoC.Configuration", "Ecopetrol.Api\Ecopetrol.Api.IoC.Configuration\Ecopetrol.Api.IoC.Configuration.csproj", "{82DDFB82-2AC5-48CD-BDE0-48281140ADCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecopetrol.Api.Tools", "Ecopetrol.Api\Ecopetrol.Api.Tools\Ecopetrol.Api.Tools.csproj", "{E7AA4F37-C821-41B7-8132-D093645F931B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecopetrol.Api.Tools", "Ecopetrol.Api\Ecopetrol.Api.Tools\Ecopetrol.Api.Tools.csproj", "{E7AA4F37-C821-41B7-8132-D093645F931B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Services", "2.Services", "{146DA7E5-BB17-4858-B3B4-35088968CC01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecopetrol.Api.Services", "Ecopetrol.Api\Ecopetrol.Api.Services\Ecopetrol.Api.Services.csproj", "{0CF23355-E0ED-4352-AF69-CBC2C9E4596A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecopetrol.Api.Services", "Ecopetrol.Api\Ecopetrol.Api.Services\Ecopetrol.Api.Services.csproj", "{0CF23355-E0ED-4352-AF69-CBC2C9E4596A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Repositories", "3.Repositories", "{AC12BF6A-847A-47EF-9F7A-1077B0239FC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecopetrol.Api.Data", "Ecopetrol.Api.Data\Ecopetrol.Api.Data.csproj", "{90C22D70-1478-4DDD-B941-91A2CD544663}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,6 +69,10 @@ Global
 		{0CF23355-E0ED-4352-AF69-CBC2C9E4596A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CF23355-E0ED-4352-AF69-CBC2C9E4596A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0CF23355-E0ED-4352-AF69-CBC2C9E4596A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90C22D70-1478-4DDD-B941-91A2CD544663}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90C22D70-1478-4DDD-B941-91A2CD544663}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90C22D70-1478-4DDD-B941-91A2CD544663}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90C22D70-1478-4DDD-B941-91A2CD544663}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -80,6 +86,7 @@ Global
 		{82DDFB82-2AC5-48CD-BDE0-48281140ADCC} = {F3E7C783-E494-4806-8071-2AF532AE45D4}
 		{E7AA4F37-C821-41B7-8132-D093645F931B} = {F3E7C783-E494-4806-8071-2AF532AE45D4}
 		{0CF23355-E0ED-4352-AF69-CBC2C9E4596A} = {146DA7E5-BB17-4858-B3B4-35088968CC01}
+		{90C22D70-1478-4DDD-B941-91A2CD544663} = {AC12BF6A-847A-47EF-9F7A-1077B0239FC3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F50BDA02-9EB0-461A-AF69-A4F50FC1D42F}

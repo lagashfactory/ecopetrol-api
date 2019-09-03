@@ -19,8 +19,8 @@ namespace Ecopetrol.Api.API.Controllers
 
         public FAQController(IFAQService service, IMapper mapper)
         {
-            _service = service;
-            _mapper = mapper;
+            _service = service ?? throw new ArgumentNullException(nameof(service));
+            _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
         }
         /// <summary>
         /// Comments and descriptions can be added to every endpoint using XML comments.

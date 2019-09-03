@@ -1,6 +1,8 @@
 ﻿using Ecopetrol.Api.API.Common.Attributes;
 using Ecopetrol.Api.API.Common.Settings;
 using Ecopetrol.Api.API.Swagger;
+using Ecopetrol.Api.Data;
+using Ecopetrol.Api.IoC.Configuration.Data;
 using Ecopetrol.Api.IoC.Configuration.DI;
 using Ecopetrol.Api.Services;
 using Ecopetrol.Api.Services.Contracts;
@@ -16,6 +18,8 @@ using Microsoft.Extensions.PlatformAbstractions;
 using Swashbuckle.AspNetCore.Swagger;
 using System.IO;
 using System.Reflection;
+using Microsoft.EntityFrameworkCore.Migrations;
+using Microsoft.EntityFrameworkCore;
 
 #pragma warning disable CS1591
 namespace Ecopetrol.Api.API
@@ -71,6 +75,9 @@ namespace Ecopetrol.Api.API
 
             //Business settings
             _appSettings = services.ConfigureBusinessServices(Configuration);
+
+            //entity framework
+            EntityFrameworkConfiguration.ConfigureEntityFramework(services, Configuration);
 
             //Swagger configuration
             if (_appSettings.IsValid())
@@ -143,6 +150,13 @@ namespace Ecopetrol.Api.API
             }
 
             app.UseMvc();
+
+            //ef migration
+            using (var serviceScope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope())
+            using (var dbCtx = serviceScope.ServiceProvider.GetService<FaqDbContext>())
+            {
+                dbCtx.Database.Migrate();
+            }
         }
 
         string XmlCommentsFilePath
