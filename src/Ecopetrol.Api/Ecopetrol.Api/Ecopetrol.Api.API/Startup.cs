@@ -2,6 +2,8 @@
 using Ecopetrol.Api.API.Common.Settings;
 using Ecopetrol.Api.API.Swagger;
 using Ecopetrol.Api.IoC.Configuration.DI;
+using Ecopetrol.Api.Services;
+using Ecopetrol.Api.Services.Contracts;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -53,7 +55,8 @@ namespace Ecopetrol.Api.API
                 opt => opt.Filters.Add(typeof(CustomFilterAttribute))
                 )
                 .SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_2_1);
-
+            services.AddScoped<IFAQService, FAQService>();
+            services.AddScoped<IUserService, UserService>();
             //API Version
             services.AddApiVersioning(
                 o =>

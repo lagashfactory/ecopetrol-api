@@ -9,6 +9,7 @@ namespace Ecopetrol.Api.IoC.Configuration.AutoMapper.Profiles
         public APIMappingProfile()
         {
             CreateMap<DC.User, S.User>().ReverseMap();
+            CreateMap<DC.FAQ, S.FAQ>().ReverseMap();
             CreateMap<DC.Adress, S.Adress>().ReverseMap();
         }
     }

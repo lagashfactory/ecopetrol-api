@@ -31,6 +31,7 @@ namespace Ecopetrol.Api.IoC.Configuration.DI
 
 
             services.AddTransient<IUserService, UserService>();
+            services.AddTransient<IFAQService, FAQService>();
 
             return appSettings;
         }
