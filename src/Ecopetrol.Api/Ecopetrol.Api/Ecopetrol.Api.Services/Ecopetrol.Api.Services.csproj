@@ -6,10 +6,10 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="9.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Options" Version="2.1.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Ecopetrol.Api.Data\Ecopetrol.Api.Data.csproj" />
     <ProjectReference Include="..\Ecopetrol.Api.API.Common\Ecopetrol.Api.API.Common.csproj" />
   </ItemGroup>
 

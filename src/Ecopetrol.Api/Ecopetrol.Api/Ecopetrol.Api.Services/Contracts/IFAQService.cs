@@ -10,9 +10,9 @@ namespace Ecopetrol.Api.Services.Contracts
 
         Task<bool> UpdateAsync(FAQ faq);
 
-        Task<bool> DeleteAsync(string id);
+        Task<bool> DeleteAsync(int id);
 
-        Task<FAQ> GetAsync(string id);
+        Task<FAQ> GetAsync(int id);
         Task<IEnumerable<FAQ>> GetAllAsync();
         
     }

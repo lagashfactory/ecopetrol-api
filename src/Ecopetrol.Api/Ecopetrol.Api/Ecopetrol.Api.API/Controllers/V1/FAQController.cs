@@ -50,7 +50,7 @@ namespace Ecopetrol.Api.API.Controllers
         /// <param name="id"></param>
         /// <returns></returns>
         [HttpGet("{id}")]
-        public async Task<FAQ> Get(string id)
+        public async Task<FAQ> Get(int id)
         {
             var data = await _service.GetAsync(id);
 
@@ -79,9 +79,6 @@ namespace Ecopetrol.Api.API.Controllers
             if (value == null)
                 throw new ArgumentNullException("value");
 
-            if (value == null)
-                throw new ArgumentNullException("value.FAQ");
-
 
             var data = await _service.CreateAsync(value);
 
@@ -103,7 +100,7 @@ namespace Ecopetrol.Api.API.Controllers
 
 
         [HttpDelete("{id}")]
-        public async Task<bool> Delete(string id)
+        public async Task<bool> Delete(int id)
         {
             return await _service.DeleteAsync(id);
         }
