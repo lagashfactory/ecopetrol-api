@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..</DockerfileContext>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -15,6 +17,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Mvc.ApiExplorer" Version="2.1.2" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="2.3.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="2.2.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.7.12" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="3.0.0" />
   </ItemGroup>
 
