@@ -26,7 +26,9 @@ namespace Ecopetrol.Api.IoC.Configuration.DI
 
             //Automap settings
             services.AddAutoMapper();
-            MappingConfigurationsHelper.ConfigureMapper();
+            var mapper = MappingConfigurationsHelper.ConfigureMapper();
+            services.AddSingleton<IMapper>(mapper);
+
 
             services.AddTransient<IUserService, UserService>();
 

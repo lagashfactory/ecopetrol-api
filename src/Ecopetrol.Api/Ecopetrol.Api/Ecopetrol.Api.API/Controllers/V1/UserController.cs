@@ -68,8 +68,7 @@ namespace Ecopetrol.Api.API.Controllers
             if (value.User == null)
                 throw new ArgumentNullException("value.User");
 
-
-            var data = await _service.CreateAsync(Mapper.Map<S.User>(value.User));
+            var data = await _service.CreateAsync(_mapper.Map<S.User>(value.User));
 
             if (data != null)
                 return _mapper.Map<User>(data);
@@ -86,7 +85,7 @@ namespace Ecopetrol.Api.API.Controllers
             if (parameter == null)
                 throw new ArgumentNullException("parameter");
 
-            return await _service.UpdateAsync(Mapper.Map<S.User>(parameter));
+            return await _service.UpdateAsync(_mapper.Map<S.User>(parameter));
         }
         #endregion
 
